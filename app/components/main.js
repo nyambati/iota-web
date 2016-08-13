@@ -1,5 +1,5 @@
 import React from 'react';
-import routerUtils from '../utils/routerUtils.js'
+import routerUtils from '../utils/routerUtils.js';
 
 var config = {
   apiKey: "AIzaSyCcNiQFgbohJ6BOTYu6uGm9lQLgLYDk3vE",

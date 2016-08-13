@@ -10,8 +10,8 @@ class Home extends React.Component {
   }
   componentDidMount() {
     rooms: this.props.database.ref('rooms').on('value', (snapshot) => {
-      this.setState({rooms: snapshot.val()})
-    })
+      this.setState({ rooms: snapshot.val() });
+    });
   }
   render() {
     const data = Object.keys(this.state.rooms)
@@ -19,7 +19,7 @@ class Home extends React.Component {
     console.log(data)
     return (
       <div className='container rooms'>
-        <table className='table table-bordered'>
+        <table className='table table-bordered table-condensed'>
           <thead>
             <tr>
               <td>Room Id</td>
