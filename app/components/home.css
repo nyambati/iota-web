@@ -1,0 +1,11 @@
+thead { font-weight: 700; }
+.green {
+    color: green;
+  }
+.red {
+  color: red;
+}
+
+.red, .green {
+  padding-right: 5px;
+}
