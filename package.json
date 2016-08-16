@@ -23,6 +23,7 @@
     "babel-install": "^2.1.0",
     "express": "^4.13.3",
     "re-base": "^1.5.1",
+    "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^2.0.0",
     "reactfire": "^0.4.0",
