@@ -1,20 +1,32 @@
 {
   "name": "iota",
   "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.3.1",
+    "npm": "3.3.3"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/andela-thomas/iota-web.git"
+  },
   "description": "an ioT app to detect presence of people in a rooms",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.5.4",
     "babel-install": "^2.1.0",
+    "express": "^4.13.3",
     "re-base": "^1.5.1",
     "react-dom": "^15.1.0",
     "react-router": "^2.0.0",
-    "reactfire": "^0.4.0"
+    "reactfire": "^0.4.0",
+    "webpack": "^1.13.1"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",

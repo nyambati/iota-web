@@ -36,7 +36,15 @@ class Home extends React.Component {
                 <td>{this.state.rooms[room].id}</td>
                 <td>{this.state.rooms[room].name}</td>
                 <td><i className={`fa fa-circle ${status === 'occupied' ? 'green' : 'red'}`}></i>{status}</td>
-                <td><button className={`btn btn-block btn-lg btn-${status === 'occupied' ? 'danger disabled' : 'success'}`}>{status === 'occupied' ? 'Disabled' : 'Book'}</button></td>
+                <td>
+                {status === 'occupied' ? 
+                  <button className={`btn btn-block btn-lg btn-${status === 'occupied' ? 'danger disabled' : 'success'}`}>{status === 'occupied' ? 'Disabled' : 'Book'}</button>
+                :
+                <a href="https://calendar.google.com/calendar/render?tab=wc&pli=1#main_7" target="blank">
+                  <button className={`btn btn-block btn-lg btn-${status === 'occupied' ? 'danger disabled' : 'success'}`}>{status === 'occupied' ? 'Disabled' : 'Book'}</button>
+                </a>
+                } 
+                </td>
               </tr>
             )
           })}
